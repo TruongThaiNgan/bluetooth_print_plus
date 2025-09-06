@@ -153,6 +153,7 @@ public class EscCommandPlugin implements FlutterPlugin, MethodCallHandler, Reque
                 this.getEscCommand().addSelectErrorCorrectionLevelForQRCode((byte) 0x31);
                 this.getEscCommand().addSelectSizeOfModuleForQRCode((byte)sizee.intValue());
                 this.getEscCommand().addStoreQRCodeData(content);
+                this.getEscCommand().addPrintQRCode();
                 result.success(true);
                 break;
             case "image":
